@@ -52,6 +52,12 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.bracket-matcher {
+  background-color: rgba(255, 8, 0, 0.1);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 8, 0, 0.15);
+}
+
 .mcol_ff0000FF {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 0, 0, 1);
@@ -161,4 +167,21 @@
 
 .entity.name.tag {
   font-weight: bold;
+}
+
+// JSON
+.json {
+  .punctuation {
+    color: @gray;
+    &.separator { color: @red; }
+  }
+
+  .quoted {
+    color: @green_dark; 
+  }
+
+  .constant {
+    color: @dark_blue;
+  }
+
 }
