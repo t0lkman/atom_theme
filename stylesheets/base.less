@@ -1,0 +1,164 @@
+@import "syntax-variables";
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+.editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+.editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+.editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+.editor .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+.editor .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+.editor.is-focused .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+.editor.is-focused .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mcol_ff0000FF {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.mcol_008000FF {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 128, 0, 1);
+}
+
+.string {
+  color: #009933;
+}
+
+.constant.numeric {
+  color: #0066FF;
+}
+
+.string.regexp {
+  color: #FF0080;
+}
+
+.keyword {
+  color: #777e89;
+}
+
+.keyword.control {
+  color: #0000FF;
+}
+
+.constant.language {
+  color: #9700CC;
+}
+
+.support.class.exception {
+  color: #990000;
+}
+
+.entity.name.function {
+  color: #FF8000;
+}
+
+.entity.name.type {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.variable.parameter {
+  font-style: italic;
+}
+
+.comment {
+  font-style: italic;
+  color: #77c485;
+}
+
+.invalid {
+  color: #FF0000;
+  background-color: rgba(231, 26, 17, 0.3);
+}
+
+.invalid.deprecated.trailing-whitespace {
+  background-color: rgba(231, 26, 17, 0);
+}
+
+.text .source {
+  color: #000000;
+  background-color: #FFF8F3;
+}
+
+.meta.tag, .declaration.tag {
+  color: #0043B5;
+}
+
+.constant, .support.constant {
+  color: #6782D3;
+}
+
+.support {
+  font-weight: bold;
+  color: #3333FF;
+}
+
+.storage {
+  font-weight: bold;
+  color: #AA2063;
+}
+
+.entity.name.section {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.entity.name.function.frame {
+  font-weight: bold;
+  color: #000000;
+}
+
+.meta.tag.preprocessor.xml {
+  color: #333333;
+}
+
+.entity.other.attribute-name {
+  font-style: italic;
+  color: #3366CC;
+}
+
+.entity.name.tag {
+  font-weight: bold;
+}
